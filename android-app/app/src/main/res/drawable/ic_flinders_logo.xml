@@ -1,0 +1,70 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Circle Background with deep green tint -->
+    <path
+        android:fillColor="@color/flinders_primary"
+        android:pathData="M60,10 C87.61,10 110,32.39 110,60 C110,87.61 87.61,110 60,110 C32.39,110 10,87.61 10,60 C10,32.39 32.39,10 60,10 Z" />
+
+    <!-- Outer Gold / Ivory Ring -->
+    <path
+        android:strokeColor="#AACCB8"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M60,14 C85.4,14 106,34.6 106,60 C106,85.4 85.4,106 60,106 C34.6,106 14,85.4 14,60 C14,34.6 34.6,14 60,14 Z" />
+
+    <!-- Coffee Cup Body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,50 L82,50 C82,50 82,78 60,78 C38,78 38,50 38,50 Z" />
+
+    <!-- Cup Handle -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M81,54 C88,54 91,60 91,65 C91,70 87,74 80,74" />
+
+    <!-- Cup Saucer -->
+    <path
+        android:strokeColor="#AACCB8"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M32,84 L88,84" />
+
+    <!-- Steam 1 (Left) -->
+    <path
+        android:strokeColor="#AACCB8"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M48,43 C46,38 50,34 48,29" />
+
+    <!-- Steam 2 (Center) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round"
+        android:pathData="M60,42 C58,36 62,32 60,26" />
+
+    <!-- Steam 3 (Right) -->
+    <path
+        android:strokeColor="#AACCB8"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M72,43 C70,38 74,34 72,29" />
+
+    <!-- Coffee Bean Icon in Center of Cup -->
+    <path
+        android:fillColor="@color/flinders_primary"
+        android:pathData="M60,56 C64,56 67,59 67,64 C67,69 64,72 60,72 C56,72 53,69 53,64 C53,59 56,56 60,56 Z" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:pathData="M60,57 C58,62 62,66 60,71" />
+
+</vector>

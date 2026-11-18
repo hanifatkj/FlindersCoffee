@@ -1,0 +1,219 @@
+{
+  "info": {
+    "_postman_id": "flinders-coffee-api-v2",
+    "name": "Flinders Coffee REST API",
+    "description": "Koleksi API Lengkap Sistem Flinders Coffee (XAMPP MySQL)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "0. Cek Status API",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/flinders-api/api.php",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["flinders-api", "api.php"]
+        }
+      }
+    },
+    {
+      "name": "1. Login User (Owner/Kasir)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"nadia\",\n  \"password\": \"owner123\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost/flinders-api/api.php?action=login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["flinders-api", "api.php"],
+          "query": [
+            {
+              "key": "action",
+              "value": "login"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "2. Ambil Semua Menu (49 Item)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/flinders-api/api.php?action=get_menus&active=1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["flinders-api", "api.php"],
+          "query": [
+            {
+              "key": "action",
+              "value": "get_menus"
+            },
+            {
+              "key": "active",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "3. Ambil Status 18 Meja (Floor Plan)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/flinders-api/api.php?action=get_tables",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["flinders-api", "api.php"],
+          "query": [
+            {
+              "key": "action",
+              "value": "get_tables"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "4. Buat Transaksi Baru (Kasir POS)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": \"FL-0001\",\n  \"customer\": \"Bima Bagaskara\",\n  \"order_type\": \"dine\",\n  \"room\": \"A\",\n  \"table\": 1,\n  \"items\": [\n    { \"n\": \"Americano\", \"p\": 18000, \"hpp\": 6500, \"q\": 2 },\n    { \"n\": \"Kentang Goreng\", \"p\": 15000, \"hpp\": 5500, \"q\": 1 }\n  ],\n  \"subtotal\": 51000,\n  \"discount\": 0,\n  \"total\": 51000,\n  \"totalHpp\": 18500,\n  \"paymentMethod\": \"Tunai\",\n  \"cashReceived\": 100000,\n  \"change\": 49000,\n  \"cashier\": \"Rani Putri\",\n  \"memberCode\": \"FLN-482910\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost/flinders-api/api.php?action=create_order",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["flinders-api", "api.php"],
+          "query": [
+            {
+              "key": "action",
+              "value": "create_order"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "5. Ambil Ringkasan Finansial (Laba Bersih Realtime)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/flinders-api/api.php?action=get_summary",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["flinders-api", "api.php"],
+          "query": [
+            {
+              "key": "action",
+              "value": "get_summary"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "6. Tambah Pengeluaran Toko",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"category\": \"Kebersihan & perlengkapan\",\n  \"amount\": 45000,\n  \"description\": \"Beli sabun cuci piring & tisu bar\",\n  \"recorded_by\": \"Rani Putri\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost/flinders-api/api.php?action=add_expense",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["flinders-api", "api.php"],
+          "query": [
+            {
+              "key": "action",
+              "value": "add_expense"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "7. Cek Stamp & Profil Member",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/flinders-api/api.php?action=get_member&code=FLN-482910",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["flinders-api", "api.php"],
+          "query": [
+            {
+              "key": "action",
+              "value": "get_member"
+            },
+            {
+              "key": "code",
+              "value": "FLN-482910"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "8. Tambah Menu Baru",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Caramel Affogato\",\n  \"category\": \"Coffee\",\n  \"price\": 25000,\n  \"hpp\": 9500,\n  \"isActive\": 1,\n  \"description\": \"Double shot espresso dituangkan di atas es krim vanila legit\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost/flinders-api/api.php?action=save_menu",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["flinders-api", "api.php"],
+          "query": [
+            {
+              "key": "action",
+              "value": "save_menu"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

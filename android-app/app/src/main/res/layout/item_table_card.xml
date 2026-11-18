@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardTable"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:background="@drawable/bg_table_available"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tvTableNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01"
+        android:textColor="@color/flinders_text_title"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTableStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Tersedia"
+        android:textColor="@color/flinders_text_muted"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tvTableCapacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 kursi"
+        android:textColor="@color/flinders_text_muted"
+        android:textSize="9sp" />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Flinders Coffee Brand Palette -->
+    <color name="flinders_primary">#0B3B24</color>
+    <color name="flinders_primary_dark">#062516</color>
+    <color name="flinders_primary_light">#164E33</color>
+    <color name="flinders_primary_alpha10">#1A0B3B24</color>
+
+    <!-- Backgrounds & Surfaces -->
+    <color name="flinders_bg">#FBF7F0</color>
+    <color name="flinders_background">#FBF7F0</color>
+    <color name="flinders_card_bg">#FFFFFF</color>
+    <color name="flinders_input_bg">#FFFFFF</color>
+    <color name="flinders_border">#E8E2D9</color>
+    <color name="flinders_border_light">#F0EAE1</color>
+
+    <!-- Typography -->
+    <color name="flinders_text_title">#1A1A1A</color>
+    <color name="flinders_text_body">#4A4640</color>
+    <color name="flinders_text_muted">#7A746D</color>
+    <color name="flinders_text_white">#FFFFFF</color>
+
+    <!-- Accents & Status -->
+    <color name="flinders_warning">#D49B24</color>
+    <color name="flinders_warning_bg">#FEF8EC</color>
+    <color name="flinders_warning_border">#E8C26E</color>
+    <color name="flinders_error">#C8372D</color>
+    <color name="flinders_error_bg">#FDF2F2</color>
+    <color name="flinders_success">#2E7D32</color>
+    <color name="flinders_success_bg">#E8F5E9</color>
+
+    <!-- Floor Plan / Table Statuses -->
+    <color name="flinders_table_avail_bg">#FAF5EE</color>
+    <color name="flinders_table_avail_border">#E6DFD4</color>
+    <color name="flinders_table_occupied_bg">#ECE7E0</color>
+    <color name="flinders_table_booked_border">#D49B24</color>
+    <color name="flinders_table_selected_bg">#0B3B24</color>
+    <color name="flinders_table_selected_text">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

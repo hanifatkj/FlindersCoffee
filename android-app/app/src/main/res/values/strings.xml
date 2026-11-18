@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Flinders Coffee</string>
+    <string name="flinders_brand">FLINDERS COFFEE</string>
+
+    <!-- Nav Titles -->
+    <string name="nav_beranda">Beranda</string>
+    <string name="nav_booking">Booking</string>
+    <string name="nav_notifikasi">Notifikasi</string>
+    <string name="nav_akun">Akun</string>
+</resources>

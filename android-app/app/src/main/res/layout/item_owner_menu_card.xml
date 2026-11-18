@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/bg_card_white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header: Title and Active Status Badge -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCardMenuName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kopi Susu Flinders"
+            android:textColor="@color/flinders_text_title"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCardMenuStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_info_card"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="● Aktif"
+            android:textColor="@color/flinders_primary"
+            android:textSize="11.5sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Category -->
+    <TextView
+        android:id="@+id/tvCardMenuCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Kopi"
+        android:textColor="@color/flinders_text_muted"
+        android:textSize="12.5sp" />
+
+    <!-- Price and HPP Breakdown Columns -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <!-- Column 1: Harga Jual -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="HARGA JUAL"
+                android:textColor="@color/flinders_text_muted"
+                android:textSize="10.5sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCardMenuPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Rp25.000"
+                android:textColor="@color/flinders_text_title"
+                android:textSize="15.5sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Column 2: HPP / Porsi -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="HPP / PORSI"
+                android:textColor="@color/flinders_text_muted"
+                android:textSize="10.5sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCardMenuHpp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Rp9.000"
+                android:textColor="@color/flinders_text_title"
+                android:textSize="15.5sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Buttons: Edit menu & Nonaktifkan -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCardEditMenu"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Edit menu"
+            android:textAllCaps="false"
+            android:textColor="@color/flinders_text_title"
+            android:textSize="13sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/flinders_border" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCardToggleStatus"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Nonaktifkan"
+            android:textAllCaps="false"
+            android:textColor="@color/flinders_text_title"
+            android:textSize="13sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/flinders_border" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="160dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Top-Left Finder Pattern -->
+    <path
+        android:fillColor="@color/flinders_primary"
+        android:pathData="M2,2h7v7H2V2z M4,4v3h3V4H4z M5,5h1v1H5V5z" />
+    <!-- Top-Right Finder Pattern -->
+    <path
+        android:fillColor="@color/flinders_primary"
+        android:pathData="M15,2h7v7h-7V2z M17,4v3h3V4H17z M18,5h1v1h-1V5z" />
+    <!-- Bottom-Left Finder Pattern -->
+    <path
+        android:fillColor="@color/flinders_primary"
+        android:pathData="M2,15h7v7H2V15z M4,17v3h3v-3H4z M5,18h1v1H5V18z" />
+    <!-- Data Modules Matrix -->
+    <path
+        android:fillColor="@color/flinders_primary"
+        android:pathData="M11,3h2v2h-2z M11,7h2v2h-2z M3,11h2v2H3z M7,11h2v2H7z M11,11h2v2h-2z M15,11h2v2h-2z M19,11h2v2h-2z M11,15h2v2h-2z M15,15h2v2h-2z M17,17h2v2h-2z M19,15h2v2h-2z M15,19h2v2h-2z M19,19h2v2h-2z M11,19h2v2h-2z" />
+</vector>

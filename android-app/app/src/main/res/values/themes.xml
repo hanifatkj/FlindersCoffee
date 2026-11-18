@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Flinders" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/flinders_primary</item>
+        <item name="colorPrimaryDark">@color/flinders_primary_dark</item>
+        <item name="colorSecondary">@color/flinders_primary_light</item>
+        <item name="android:statusBarColor">@color/flinders_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/flinders_bg</item>
+
+        <!-- Hilangkan pil oval Material 3 default yang ungu / tidak presisi -->
+        <item name="bottomNavigationStyle">@style/Widget.Flinders.BottomNavigationView</item>
+    </style>
+
+    <style name="Widget.Flinders.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemActiveIndicatorStyle">@style/Widget.Flinders.BottomNavigation.ActiveIndicator</item>
+        <item name="itemIconTint">@color/nav_item_selector</item>
+        <item name="itemTextColor">@color/nav_item_selector</item>
+        <item name="itemRippleColor">@color/flinders_primary_alpha10</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <style name="Widget.Flinders.BottomNavigation.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <!-- Hilangkan pill background ungu, ganti dengan transparan yang bersih dan rapi -->
+        <item name="android:color">@color/transparent</item>
+    </style>
+</resources>

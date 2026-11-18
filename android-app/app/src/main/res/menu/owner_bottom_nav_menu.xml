@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_owner_home"
+        android:icon="@drawable/ic_nav_owner_home"
+        android:title="Ringkasan" />
+    <item
+        android:id="@+id/nav_owner_order"
+        android:icon="@drawable/ic_nav_owner_order"
+        android:title="Aktivitas" />
+    <item
+        android:id="@+id/nav_owner_floor"
+        android:icon="@drawable/ic_scan"
+        android:title="Scan" />
+    <item
+        android:id="@+id/nav_owner_manage"
+        android:icon="@drawable/ic_nav_owner_manage"
+        android:title="Kelola" />
+    <item
+        android:id="@+id/nav_owner_profile"
+        android:icon="@drawable/ic_nav_owner_profile"
+        android:title="Akun" />
+</menu>
